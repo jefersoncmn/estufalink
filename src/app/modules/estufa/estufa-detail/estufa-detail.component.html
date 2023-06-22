@@ -1,0 +1,30 @@
+<div class="flex flex-col flex-auto min-w-0">
+
+    <!-- Main -->
+    <div class="flex-auto p-6 sm:p-10">
+
+            <!-- CONTENT GOES HERE -->
+            <div class="h-400 min-h-400 max-h-400">
+                <div class="text-7xl sm:text-8xl font-bold tracking-tight leading-none text-black-500">Estufa 1</div>
+                <div class="flex flex-col items-center mt-2">
+                    <div class="text-7xl sm:text-8xl font-bold tracking-tight leading-none text-blue-500">22</div>
+                    <div class="text-lg font-medium text-blue-600 dark:text-blue-500">Temperatura</div>
+                    <div class="flex items-baseline justify-center w-full mt-5 text-secondary">
+                        <!-- <div class="text-md font-medium truncate">Completed:</div>
+                        <div class="ml-1.5 text-lg font-semibold">13</div> -->
+                    </div>
+                </div>
+                <div style="text-align:center">
+                    <apx-chart
+                      [series]="chartOptions.series"
+                      [chart]="chartOptions.chart"
+                      [xaxis]="chartOptions.xaxis"
+                      [title]="chartOptions.title"
+                    ></apx-chart>
+                  </div>
+               
+            </div>
+
+    </div>
+
+</div>

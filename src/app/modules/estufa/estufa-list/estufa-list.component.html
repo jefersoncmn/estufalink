@@ -1,0 +1,28 @@
+<div class="flex flex-col flex-auto min-w-0">
+
+	<!-- Main -->
+	<div class="flex-auto p-6 sm:p-10">
+
+		<!-- CONTENT GOES HERE -->
+		<div class="h-400 min-h-400 max-h-400">
+
+			<fuse-card *ngFor="let estufa of estufas" [routerLink]="['/estufa/:2']" class="h-16 mb-2">
+				<div class="flex-none w-48 relative">
+					<img src="/favicon-16x16.png" alt="" class="absolute inset-0 w-full h-full object-cover" loading="lazy" />
+				</div>
+
+				<h1 class="flex-auto items-center text-lg font-semibold text-slate-900 ">
+					Estufa {{estufa.idEstufa}}
+				</h1>
+				<div class="flex-none w-48 relative">
+					<div alt="" id="estufaStateOn" *ngIf="estufa.ativa == true" class="h-full w-full flex items-center justify-center" loading="lazy">Ativa</div>
+					<div alt="" id="estufaStateOff" *ngIf="estufa.ativa == false" class="h-full w-full flex items-center justify-center" loading="lazy">Desativa</div>
+				</div>
+
+			</fuse-card>
+
+		</div>
+
+	</div>
+
+</div>
